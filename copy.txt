@@ -1,0 +1,12 @@
+string destination;
+string process;
+ofstream file;
+
+
+
+
+    destination = argv[1];
+    process = argv[2];
+
+    signal(SIGINT, signalHandler);
+    signal(SIGHUP, hupHandler);
